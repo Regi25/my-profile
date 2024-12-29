@@ -1,0 +1,32 @@
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: var(--btn-color); /* Цвет переключателя */
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.switch {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--btn-text-color); /* Цвет самого ползунка */
+  transform: translateY(-50%);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.switch.light {
+  transform: translateY(-50%) translateX(0); /* Ползунок в начальном положении */
+}
+
+.switch.dark {
+  transform: translateY(-50%) translateX(25px);
+}
