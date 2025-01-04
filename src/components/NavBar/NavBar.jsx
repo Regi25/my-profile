@@ -1,10 +1,8 @@
-// import { useContext } from "react";
 import MobileNavBar from "../MobileNavBar/MobileNavBar";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import styles from "./NavBar.module.css";
 
 function NavBar() {
-  // const {theme} = useContext(ThemeContext);
   const menuItems = [
     { id: 1, name: "About", href: "#about" },
     { id: 2, name: "Projects", href: "#projects" },

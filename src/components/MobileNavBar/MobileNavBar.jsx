@@ -22,7 +22,11 @@ function MobileNavBar() {
       <div className={styles.navHeader}>
         <ThemeToggle />
         <button className={styles.menuButton} onClick={toggleMenu}>
-          {isOpen ? <FaTimes /> : <FaBars />}
+          {isOpen ? (
+            <FaTimes className={styles.icon} />
+          ) : (
+            <FaBars className={styles.icon} />
+          )}
         </button>
       </div>
       {isOpen && (
@@ -30,7 +34,7 @@ function MobileNavBar() {
           {menuItems.map(({ id, href, name }) => (
             <li key={id}>
               <a href={href} onClick={toggleMenu}>
-                {name}
+                <h3>{name}</h3>
               </a>
             </li>
           ))}

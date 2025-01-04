@@ -1,3 +1,16 @@
+:root {
+  --icon-color-light: #000; /* Черный цвет для светлой темы */
+  --icon-color-dark: #fff; /* Белый цвет для темной темы */
+}
+
+.icon {
+  color: var(--icon-color-light); /* Значение по умолчанию для светлой темы */
+}
+
+[data-theme="dark"] .icon {
+  color: var(--icon-color-dark);
+}
+
 .mobileNavbar {
   display: none;
 }
@@ -38,6 +51,18 @@
 
 .menuItems li a:hover {
   background-color: var(--hover-background-color);
+}
+.menuItems li h3 {
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.menuItems li h3:hover {
+  transform: scale(1.05);
+  color: var(--btn-color);
+}
+
+.menuItems h3:active {
+  transform: translateY(2px);
 }
 
 @media screen and (max-width: 800px) {
