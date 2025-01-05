@@ -1,9 +1,9 @@
 import styles from "./Projects.module.css";
 import ProjectCard from "../../common/ProjectCard";
-import viberr from "../../assets/viberr.png";
-import freshBurger from "../../assets/fresh-burger.png";
-import hipsster from "../../assets/hipsster.png";
-import fitLift from "../../assets/fitlift.png";
+import marvel from "../../assets/marvel.png";
+import game from "../../assets/game.png";
+import employee from "../../assets/employee.png";
+import books from "../../assets/books.png";
 
 function Projects() {
   return (
@@ -11,28 +11,28 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link="https://github.com/Regi25"
-          h3="Viberr"
-          p="Streaming App"
+          src={marvel}
+          link="https://github.com/Regi25/marvel-heroes-portal"
+          h3="Marvel Heroes"
+          p="Hero Database"
         />
         <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Regi25"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          src={employee}
+          link="https://github.com/Regi25/employee-management-system"
+          h3="Employee Manager"
+          p="Manage staff data "
         />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com/Regi25"
-          h3="Hipsster"
-          p="Glasses Shop"
+          src={game}
+          link="https://github.com/Regi25/aim-game"
+          h3="Aim Game"
+          p="Hit the dots"
         />
         <ProjectCard
-          src={fitLift}
-          link="https://github.com/Regi25"
-          h3="FitLift"
-          p="Fitness App"
+          src={books}
+          link="https://github.com/Regi25/bookstore"
+          h3="Bookstore"
+          p="Digital Library"
         />
       </div>
     </section>

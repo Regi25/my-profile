@@ -53,8 +53,14 @@ function AboutMe() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+          Experienced in JavaScript and React, with hands-on experience
+          developing web applications using TypeScript and Node.js.
+          <br />
+          Strong understanding of object-oriented programming principles and
+          experience with version control using Git
+          <br />
+          Currently learning Flutter to build cross-platform mobile
+          applications.
         </p>
         <a href={CV} download>
           <button className="hover">Download CV</button>
